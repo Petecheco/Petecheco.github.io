@@ -2,7 +2,7 @@
     :root {
         --main-bkg: #ffffff;
         --main-text: #000000;
-        --article-box: rgb(245, 245, 220);
+        --article-box: rgb(243, 243, 235);
         --main-icon-bkg: #000000;
         --main-shadow: #00000075;
         --tag-color: #cfcfcf;
@@ -174,7 +174,8 @@ body {
     font-size: 20px;
 }
 
-.article-abstract {
+.article-author {
+    width: 100%;
     margin-top: 5px;
     margin-bottom: 5px;
     overflow: hidden;
@@ -223,4 +224,101 @@ a {
 .icon-container:hover .icon-noti {
     transform: translateX(0px) translateY(2px);
     opacity: 1;
+}
+
+.strong {
+    font-weight: bolder;
+}
+
+.article-info-left {
+    width: 30%;
+    padding-right: 20px;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.article-info-right {
+    width: 70%;
+    pointer-events: none;
+}
+
+.article-info-container {
+    display: flex;
+}
+
+.left-img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.float-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    max-width: 90%;
+    min-width: 70%;
+    height: auto;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    background-color: var(--main-bkg);
+    border: 2px solid var(--article-box);
+    box-shadow: var(--main-shadow) 0px 7px 29px 0px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.close-btn:hover {
+    transform: rotate(90deg);
+}
+
+.float-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.float-open {
+    background-color: var(--main-icon-bkg);
+    padding: 10px;
+    color: var(--main-bkg);
+    transition-duration: 0.2s;
+    border-radius: 20px;
+}
+
+.float-open:hover {
+    background-color: var(--tag-color);
+    color: var(--main-icon-bkg);
+}
+
+.float-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 80%;
+    overflow: hidden;
+}
+
+.f-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.f-abstract {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: lighter;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.hidden-abs {
+    display: none;
 }

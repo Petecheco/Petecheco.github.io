@@ -1,0 +1,33 @@
+/* MAIN CSS */
+body {
+    background-image: url('https://bing.img.run/1366x768.php');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgb(40, 41, 44);
+    min-height: 100vh;
+}
+
+@keyframes hoverAnim {
+    0% {
+        color: #e2a963;
+    }
+    50% {
+        color: #bd8d53;
+    }
+    100% {
+        color: #e2a963;
+    }
+}
+
+.primaryText {
+    color: #e2a963;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    transition-duration: .5s;
+}
+
+.primaryText:hover {
+    animation: hoverAnim 0.75s infinite;
+}

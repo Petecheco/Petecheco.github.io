@@ -31,3 +31,17 @@ body {
 .primaryText:hover {
     animation: hoverAnim 0.75s infinite;
 }
+
+.urlLink {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 5px;
+    border-radius: 5px;
+    transition-duration: .2s;
+    color: inherit;
+    text-decoration: none;
+}
+
+.urlLink:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}

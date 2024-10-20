@@ -14,7 +14,7 @@
                 Click to Contact Me!
             </n-tooltip>
             <div class="mainTextContainer">
-                <div class="mainLargeText">Hi, I'm <span class="primaryText">Shengke Sun(孙盛珂)</span></div>
+                <div class="mainLargeText">Hi, I'm <span class="primaryText">Shengke Sun (孙盛珂)</span></div>
                 <div class="mainLargeText">A <span class="primaryText">Computer Vision</span> Researcher</div>
                 <div class="mainLargeText">From <span class="primaryText">Tiangong University, China</span></div>
             </div>
@@ -43,7 +43,9 @@
             <div class="contentTitle"><Icon><ChevronForward /></Icon>Introduction</div>
             <n-space>
             <div class="contentText">I am currently an undergraduate student in the Department of Software Engineer 
-                at Tiangong University, Tianjin, China. I'm currently supervised by Prof. Zhanshan Zhao. I am a beginner researcher in deep learning 
+                at Tiangong University, Tianjin, China. I'm currently supervised by 
+                <a class="urlLink" href="https://gcatnjust.github.io/ChenGong/index.html" target="_blank">Prof. Zhanshan Zhao</a>. 
+                I am a beginner researcher in deep learning 
                 and have embarked on this path due to my passion for Artificial Intelligence. 
                 I believe that the fundamental purpose of AI is to help human society progress 
                 and improve the productivity for everyone. I hope that my research can contribute 

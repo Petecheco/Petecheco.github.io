@@ -10,7 +10,7 @@
                 </template>
                 <n-list-item v-for="news in newsList" :key="news.title">
                     <NSpace justify="space-between" align="center">
-                        <div>{{ news.title }}</div>
+                        <div v-html="news.title" />
                         <div>{{ news.time }}</div>
                     </NSpace>
                 </n-list-item>
@@ -26,7 +26,9 @@ import { Icon } from '@vicons/utils';
 import { NList, NListItem, NSpace } from 'naive-ui';
 
 const newsList = ref([
-    {   title: 'I will be joining Nanjing University of Science and Technology(NJUST) to pursue my bachelor\'s degree under the supervision of Prof. Chen Gong.',
+    {   title: `I will be joining Nanjing University of Science and Technology(NJUST) 
+                to pursue my bachelor\'s degree under the supervision of 
+                <a class="urlLink" href="https://gcatnjust.github.io/ChenGong/index.html" target="_blank">Prof. Chen Gong</a>.`,
         time: '2024/9/28'
     },
     {

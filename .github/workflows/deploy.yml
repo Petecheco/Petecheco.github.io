@@ -38,6 +38,7 @@ jobs:
           extended: true
 
       - name: Build blog
+	working-directory: blog
         run: |
           rm -rf dist/blog
           hugo

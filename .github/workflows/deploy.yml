@@ -67,6 +67,6 @@ jobs:
             echo "No changes to commit."
             exit 0
           fi
-          git commit -m "Deploy dist [skip ci]"
+          git commit -m "Build and deploy the personal website"
           git push origin main
 

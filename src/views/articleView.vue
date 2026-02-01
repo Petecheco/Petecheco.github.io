@@ -66,14 +66,47 @@ import { NThing, NTag, NImage, NButton, NSpace, NIcon, NList, NListItem } from '
 import sensorsCover from '@/assets/articleCovers/sensors-23-08060-g002.png'
 import jsenCover from '@/assets/articleCovers/jsen-gagraphic-3345400.jpg'
 import clrGAN from '@/assets/articleCovers/clr-gan.jpg'
+import mdDAN from '@/assets/articleCovers/mddan.png'
+import pms from '@/assets/articleCovers/pms.png'
+import dac from '@/assets/articleCovers/dac_fcf.png'
 
 const articleList = ref([
+    {
+        title: 'A Novel Multidynamic Domain Adaptation Transfer Learning Method for Fault Diagnosis of Bearings With Insufficient Labeled Data',
+        authors: 'Shuzhen Han, Shengke Sun, Zhanshan Zhao, Hua Wang, Jiao Yin, Yitong Li, Pingjuan Niu',
+        journal: 'IEEE Transactions on Reliability',
+        date: '2026',
+        link: 'https://ieeexplore.ieee.org/abstract/document/11342334/',
+        cover: mdDAN,
+        abstract: '',
+        tags: ['Machine Learning', 'Trustworthy AI','AI']
+    },
+    {
+        title: 'Parallel multi-scale convolutional neural network with incremental learning for bearing compound fault diagnosis under variable working conditions',
+        authors: 'Shuzhen Han, Shengke Sun, Ke Pang, Jianfei Li, Fujun Tian, Dong Zhen, Guojin Feng, Pingjuan Niu',
+        journal: 'Journal of the Brazilian Society of Mechanical Sciences and Engineering',
+        date: '2025',
+        link: 'https://link.springer.com/article/10.1007/s40430-025-05822-4',
+        cover: pms,
+        abstract: '',
+        tags: ['Multi-scale CNN', 'Incremental Learning','Compound fault diagnosis']
+    },
+    {
+        title: 'An Advanced Convolutional Neural Network for Bearing Fault Diagnosis under Limited Data',
+        authors: 'Shengke Sun, Shuzhen Han, Ziqian Luan, Xinghao Qin, Jiao Yin, Zhanshan Zhao, Jinli Cao, Hua Wang',
+        journal: 'arXiv preprint',
+        date: '2025',
+        link: 'https://arxiv.org/abs/2509.11053',
+        cover: dac,
+        abstract: '',
+        tags: ['Generative Adversarial Networks', 'Fourier Transform','Few-shot Learning']
+    },
     {
         title: 'CLR-GAN: Improving GANs Stability and Quality via Consistent Latent Representation and Reconstruction',
         authors: 'Shengke Sun, Ziqian Luan, Zhanshan Zhao, Shijie Luo and Shuzhen Han',
         journal: 'European Conference on Computer Vision(ECCV)',
         date: '2024',
-        link: '',
+        link: 'https://link.springer.com/chapter/10.1007/978-3-031-73232-4_12',
         cover: clrGAN,
         abstract: '',
         tags: ['Generative Adversarial Networks', 'Image Generation','Latent Space Consistency']

@@ -26,6 +26,12 @@ import { Icon } from '@vicons/utils';
 import { NList, NListItem, NSpace } from 'naive-ui';
 
 const newsList = ref([
+    {   title: `I started writing <a class="urlLink" href="/blog/blog" target="_blank">blogs</a> about tricks and findings that I encounter during my research. Welcome leave any comment!`,
+        time: '2026/2/1'
+    },
+    {   title: `I will be joining <a class="urlLink" href="https://galaxea-ai.com/" target="_blank">Galaxea AI</a> as a research intern.`,
+        time: '2024/11/28'
+    },
     {   title: `I will be joining Nanjing University of Science and Technology(NJUST) 
                 to pursue my bachelor\'s degree under the supervision of 
                 <a class="urlLink" href="https://gcatnjust.github.io/ChenGong/index.html" target="_blank">Prof. Chen Gong</a>.`,

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Shengke&#39;s Blog</title>
+    <link>https://petecheco.github.io/blog/blog/</link>
+    <description>Recent content in Blogs on Shengke&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © 2026, Shengke Sun.</copyright>
+    <lastBuildDate>Sun, 01 Feb 2026 15:11:11 +0800</lastBuildDate>
+    <atom:link href="https://petecheco.github.io/blog/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://petecheco.github.io/blog/my-first-post/</link>
+      <pubDate>Sun, 01 Feb 2026 15:11:11 +0800</pubDate>
+      <guid>https://petecheco.github.io/blog/my-first-post/</guid>
+      <description>&lt;p&gt;This is a page about »My First Post«.&#xA;这是我的第一个Post!&#xA;😄&lt;/p&gt;&#xA;&lt;p&gt;这是一个公式：&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;e^{\pi i} + 1 = 0&#xA;$$&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

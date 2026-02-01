@@ -2,22 +2,22 @@ name: Build & Deploy Site
 
 on:
   push:
-    branches: ["main", "source"]
+    branches: ["source"]
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write  # 需要写权限才能 push 回 main
 
 jobs:
-  build:
+  build-and-push:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout source
         uses: actions/checkout@v4
         with:
+          ref: source
           submodules: true
+          fetch-depth: 0
 
       # ===== 前端构建 =====
       - name: Setup Node
@@ -40,18 +40,33 @@ jobs:
       - name: Build blog
         working-directory: myblog
         run: |
-          rm -rf dist/blog
+          rm -rf ../dist/blog
           hugo
 
-      # ===== 部署 Pages =====
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      # ===== 把 dist 推到 main 分支 =====
+      - name: Checkout main into ./_main
+        uses: actions/checkout@v4
         with:
-          path: dist
+          ref: main
+          path: _main
+          fetch-depth: 0
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy
-        uses: actions/deploy-pages@v4
+      - name: Sync dist -> main branch
+        run: |
+          rm -rf _main/*
+          cp -a dist/. _main/
+
+      - name: Commit & push to main
+        run: |
+          cd _main
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git status --porcelain
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Deploy dist [skip ci]"
+          git push origin main
+

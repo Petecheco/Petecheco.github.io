@@ -33,6 +33,7 @@ const router = createRouter({
       name: 'about',
       component: aboutView
     },
+    
   ]
 })
 

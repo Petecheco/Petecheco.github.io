@@ -53,6 +53,12 @@
             </div>            
             </n-space>
         </div>
+        <div class="mainContent">
+            <div class="contentTitle"><Icon><ChevronForward /></Icon>Blog</div>
+            <n-space>
+            <div class="contentText">I wrote <a class="urlLink" href="/blog/blog">blogs</a> that contains my thoughts on AI. </div>
+            </n-space>
+        </div>
     </div>
 </template>
 
